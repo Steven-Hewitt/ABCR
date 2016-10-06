@@ -6,6 +6,10 @@ c = []
 reg = 0
 ip = 0
 
+prompt= False
+
+interactive = True
+
 usesys= True
 
 debug = False
@@ -333,6 +337,7 @@ def interpret():
     global b
     global c
     global inputq
+    global prompt
     if debug: 
         print("interpreting",len(program))
     while ip < len(program):
@@ -350,5 +355,13 @@ def interpret():
     a,b,c,inputq=[],[],[],[]
 if __name__ == "__main__":
     while 1:
-        tokenize(input(" > : "))
+        
+        if prompt:
+           i = input(" > : ")
+        else:
+           with open(sys.argv[0], 'r') as content_file:
+                i = content_file.read()
+        tokenize(i)
         interpret()
+        if not prompt:
+            break;
