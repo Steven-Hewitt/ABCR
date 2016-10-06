@@ -211,44 +211,41 @@ def wa():
         pass
     else:
         nest = 1
-        ip +=1
         while nest:
+            ip += 1
             if program[ip][0] in [wa,wb,wc,wr]: nest+=1
             elif program[ip][0] in [mrk]: nest -= 1
-            ip += 1
 def wb():
     global ip
     if bp():
         pass
     else:
         nest = 1
-        ip +=1
         while nest:
+            ip += 1
             if program[ip][0] in [wa,wb,wc,wr]: nest+=1
             elif program[ip][0] in [mrk]: nest -= 1
-            ip += 1
+
 def wc():
     global ip
     if cp():
         pass
     else:
         nest = 1
-        ip +=1
         while nest:
+            ip += 1
             if program[ip][0] in [wa,wb,wc,wr]: nest+=1
             elif program[ip][0] in [mrk]: nest -= 1
-            ip += 1
 def wr():
     global ip
     if reg:
         pass
     else:
         nest = 1
-        ip +=1
         while nest:
+            ip += 1
             if program[ip][0] in [wa,wb,wc,wr]: nest+=1
             elif program[ip][0] in [mrk]: nest -= 1
-            ip += 1
 def al():
     return len(a)
 def bl():
