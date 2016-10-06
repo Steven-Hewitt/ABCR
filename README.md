@@ -22,6 +22,7 @@ That is not to say, however, that all queues are created equal.  The three queue
 (Disclaimer: I have very little clue how to use Markdown formatting.)
 
     A-Variant | B-Variant | C-Variant | R-Variant | Name      | Function
+    ----------|-----------|-----------|-----------|-----------|---------------
     a         | b         | c         | r         | Dequeue   | Dequeues a single value into R. (dequeuing R into R is effectively a no-op.)
     A         | B         | C         | R         | Enqueue   | Pushes R to the queue.  (pushing R to R is effectively a no-op.)
     o         | p         | q         |           | Numprint  | Prints the front of the queue as a number. Does not dequeue.
