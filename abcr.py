@@ -341,7 +341,7 @@ def interpret():
     while ip < len(program):
         if program[ip][1]:
             reg = program[ip][0](reg)
-        elif program[ip] in [wa,wb,wc,wr,mrk]:
+        elif program[ip][0] in [wa,wb,wc,wr,mrk]:
             program[ip][0]()
         else: reg = program[ip][0]()
         if debug: print("reg",reg,"IP",ip,"a",a,"b",b,"c",c)
