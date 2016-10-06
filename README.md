@@ -26,7 +26,7 @@ That is not to say, however, that all queues are created equal.  The three queue
     A         | B         | C         | R         | Enqueue   | Pushes R to the queue.  (pushing R to R is effectively a no-op.)
     o         | p         | q         |           | Numprint  | Prints the front of the queue as a number. Does not dequeue.
     O         | P         | Q         |           | Charprint | Prints the front of the queue as a character. Does not dequeue.
-    1         | 2         | 3         | R         | Peek      | Looks at the front of the queue.
+    1         | 2         | 3         | R         | Peek      | Looks at the front of the queue. (Looking at R is a no-op.)
     !         | @         | #         |           | Length    | Gets the length of the queue.
     *         | +         | ,         |           | Add       | Adds the front of the queue to the register value.  Dequeues.
     -         | .         | /         |           | Subtract  | Subtracts the front of the queue from the register value. Dequeues.
