@@ -33,4 +33,6 @@ That is not to say, however, that all queues are created equal.  The three queue
     -         | .         | /         |           | Subtract  | Subtracts the front of the queue from the register value. Dequeues.
     4         | 5         | 6         | 7         | While     | Begins a loop that continues while the front of the queue is truthy.
     x         | x         | x         | x         | Mark      | Ends a single while loop.
+              |           |           | )         | Increment | Increments register value.
+              |           |           | (         | Decrement | Decrements register value.
               |           |           | i         | Input     | Grabs a positive or negative integer from the input stream.
